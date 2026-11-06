@@ -89,6 +89,20 @@
     @media(max-width:700px){.hero{padding-top:42px}.hero-copy{padding:20px 0 0}.hero-art{min-height:340px}.nav{background:rgba(248,251,252,.98);border-color:rgba(10,35,54,.12);box-shadow:0 16px 35px rgba(13,43,63,.12)}.nav a{color:#425d6d}}
     @media(max-width:480px){.hero{padding-top:30px}.hero-art{border-radius:20px}.editor{max-width:calc(100% - 20px)}.float-chip{font-size:8px}.section:nth-of-type(even){background:rgba(232,240,243,.55)}}
 
+
+    /* Accessibility refinements: stronger small-text contrast and visible keyboard focus. */
+    .brand span:last-child,.nav a:hover,.nav a:focus-visible,.eyebrow,.section-index,
+    .section-title em,.network-orbit,.education-label,.cap-icon,.skill-icon,
+    .filter:hover,.filter:focus-visible,.filter[aria-pressed="true"],.project-type,
+    .project-link,.project-link:hover,.interest-index,.swift-label,.footer a,.footer a:hover,
+    :focus-visible{color:#075e50}
+    .fact span,.project-note,.references-note,.footer{color:#536979}
+    .button-primary,.button-primary:hover,.button-primary:focus-visible,
+    .skip-link{background:#087c69;border-color:#087c69;color:#fff}
+    .button-primary:hover,.button-primary:focus-visible{background:#075e50;border-color:#075e50;color:#fff}
+    .skip-link:focus{background:#087c69;color:#fff}
+    .contact-panel a:focus-visible{outline-color:#fff}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
   </style>
   <script type="application/ld+json">
   {
@@ -120,7 +134,7 @@
         "jobTitle": "Computer Science Student | IT Support | Web Developer | Remote Freelancer",
         "affiliation": {"@type": "CollegeOrUniversity", "name": "Maseno University"},
         "knowsAbout": ["Java programming", "Assembly Language", "Web development", "IT support", "Computer networking"],
-        "sameAs": ["https://github.com/CEOTechO01"],
+        "sameAs": ["https://github.com/CEOTechO01", "https://www.instagram.com/spry_c.e.o/"],
         "mainEntityOfPage": {"@id": "https://ceotecho01.github.io/CEOTechO01/#webpage"}
       }
     ]
@@ -265,6 +279,7 @@
           <div class="contact-details"><p>Have an idea, an opportunity to discuss, or simply want to connect? I’d be glad to hear from you.</p><div class="contact-list">
             <a class="contact-item" href="mailto:njorogereuben388@gmail.com"><span>Email</span><span>njorogereuben388@gmail.com</span><span class="arrow" aria-hidden="true">↗</span></a>
             <a class="contact-item" href="https://github.com/CEOTechO01" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>github.com/CEOTechO01</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="contact-item" href="https://www.instagram.com/spry_c.e.o/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>@spry_c.e.o</span><span class="arrow" aria-hidden="true">↗</span></a>
             <a class="contact-item" href="https://wa.me/254759196665?text=Hi%20Reuben%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><span>Start a conversation</span><span class="arrow" aria-hidden="true">↗</span></a>
             <a class="contact-item" href="tel:+254759196665"><span>Phone · Safaricom</span><span>+254 759 196665</span><span class="arrow" aria-hidden="true">↗</span></a>
             <a class="contact-item" href="tel:+254785278658"><span>Phone · Airtel</span><span>+254 785 278658</span><span class="arrow" aria-hidden="true">↗</span></a>
