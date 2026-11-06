@@ -119,18 +119,6 @@
     }
     .project-card:focus-within{outline:3px solid #075e50;outline-offset:3px;box-shadow:0 0 0 2px #fff,0 0 0 5px #075e50}
   
-    /* Responsive personal photo gallery */
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .gallery-card{margin:0;overflow:hidden;border-radius:var(--radius);transition:transform .22s,border-color .22s,box-shadow .22s}
-    .gallery-card:hover{transform:translateY(-4px);border-color:rgba(13,156,122,.3);box-shadow:0 18px 42px rgba(13,43,63,.12)}
-    .gallery-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#eaf0f3}
-    .gallery-card figcaption{padding:13px 16px 15px;color:var(--muted);font-size:12px;line-height:1.5}
-    .gallery-placeholder{min-height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;border:1px dashed rgba(10,35,54,.32);background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(234,240,243,.62));text-align:center}
-    .placeholder-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(13,156,122,.38);border-radius:50%;color:#075e50;font-size:25px;line-height:1}
-    .placeholder-title{color:var(--text);font-size:13px;font-weight:700}
-    .placeholder-note{color:var(--muted);font-size:11px}
-    @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:480px){.gallery-grid{gap:12px}.gallery-card figcaption{padding:10px 12px;font-size:11px}.gallery-placeholder{min-height:175px;padding:16px}.placeholder-title{font-size:12px}}
   </style>
   <script type="application/ld+json">
   {
@@ -176,7 +164,7 @@
       <a class="brand" href="#home" aria-label="Reuben Njoroge, home"><span class="brand-mark">RN</span>RUBBY TECH <span>/ NJOROGE</span></a>
       <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">MENU&nbsp; +</button>
       <nav class="nav" id="primaryNav" aria-label="Main navigation">
-        <a href="#about">ABOUT</a><a href="#education">EDUCATION</a><a href="#experience">EXPERIENCE</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#interests">INTERESTS</a><a href="#photos">PHOTOS</a><a href="#contact">CONTACT ↗</a>
+        <a href="#about">ABOUT</a><a href="#education">EDUCATION</a><a href="#experience">EXPERIENCE</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#interests">INTERESTS</a><a href="#contact">CONTACT ↗</a>
       </nav>
     </div>
   </header>
@@ -300,25 +288,10 @@
       </div>
     </section>
 
-    <section class="section" id="photos" aria-labelledby="photosTitle">
-      <div class="wrap">
-        <div class="section-heading"><div><div class="section-index">07 / PHOTO GALLERY</div><h2 class="section-title" id="photosTitle">A little more <em>about me.</em></h2></div><p class="section-lead">A few moments from my life and studies. The labeled placeholders are ready for more photos whenever you are.</p></div>
-        <div class="gallery-grid">
-          <figure class="panel gallery-card"><img src="assets/reuben-at-computer.jpg" alt="Reuben taking a selfie at a computer desk with classmates in a computer lab." loading="lazy" decoding="async" width="1050" height="1400"><figcaption>At the computer lab</figcaption></figure>
-          <figure class="panel gallery-card"><img src="assets/reuben-portrait-blue.jpg" alt="Reuben wearing a blue shirt and cap." loading="lazy" decoding="async" width="1050" height="1400"><figcaption>A portrait</figcaption></figure>
-          <figure class="panel gallery-card"><img src="assets/reuben-blue-hoodie.jpg" alt="Reuben in a blue hoodie, smiling for a photo." loading="lazy" decoding="async" width="1050" height="1400"><figcaption>A relaxed moment</figcaption></figure>
-          <figure class="panel gallery-card"><img src="assets/reuben-casual-portrait.jpg" alt="Reuben in a tan and white shirt, taking a portrait photo." loading="lazy" decoding="async" width="973" height="1400"><figcaption>A casual portrait</figcaption></figure>
-          <figure class="panel gallery-card"><img src="assets/reuben-casual-selfie.jpg" alt="Reuben taking a selfie in a tan and white shirt." loading="lazy" decoding="async" width="1400" height="1050"><figcaption>A quick selfie</figcaption></figure>
-          <div class="panel gallery-placeholder" role="img" aria-label="Image placeholder 1: add another portfolio photo"><span class="placeholder-icon" aria-hidden="true">＋</span><span class="placeholder-title">Photo placeholder 1</span><span class="placeholder-note">Replace with another picture</span></div>
-          <div class="panel gallery-placeholder" role="img" aria-label="Image placeholder 2: add another portfolio photo"><span class="placeholder-icon" aria-hidden="true">＋</span><span class="placeholder-title">Photo placeholder 2</span><span class="placeholder-note">Replace with another picture</span></div>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="contact" aria-labelledby="contactTitle">
       <div class="wrap">
         <div class="panel contact-panel">
-          <div class="contact-copy"><div class="section-index">08 / YOUR TURN</div><h2 id="contactTitle">Let’s make<br>something <em>matter.</em></h2><p>I welcome thoughtful conversations, collaborations, internships, project opportunities and connections with people who enjoy learning, building and solving problems.</p></div>
+          <div class="contact-copy"><div class="section-index">07 / YOUR TURN</div><h2 id="contactTitle">Let’s make<br>something <em>matter.</em></h2><p>I welcome thoughtful conversations, collaborations, internships, project opportunities and connections with people who enjoy learning, building and solving problems.</p></div>
           <div class="contact-details"><p>Have an idea, an opportunity to discuss, or simply want to connect? I’d be glad to hear from you.</p><div class="contact-list">
             <a class="contact-item" href="mailto:njorogereuben388@gmail.com"><span>Email</span><span>njorogereuben388@gmail.com</span><span class="arrow" aria-hidden="true">↗</span></a>
             <a class="contact-item" href="https://github.com/CEOTechO01" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>github.com/CEOTechO01</span><span class="arrow" aria-hidden="true">↗</span></a>
