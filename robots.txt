@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ceotecho01.github.io/CEOTechO01/sitemap.xml
