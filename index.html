@@ -103,6 +103,21 @@
     .skip-link:focus{background:#087c69;color:#fff}
     .contact-panel a:focus-visible{outline-color:#fff}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+    /* Consistent, high-contrast keyboard focus for every interactive control. */
+    :where(a[href],button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),summary,[role="button"],[tabindex]:not([tabindex="-1"])):focus-visible{
+      outline:3px solid #075e50!important;
+      outline-offset:3px!important;
+      box-shadow:0 0 0 2px #fff!important;
+      border-radius:4px;
+      position:relative;
+      z-index:5;
+    }
+    .contact-panel :where(a[href],button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),summary,[role="button"],[tabindex]:not([tabindex="-1"])):focus-visible{
+      outline-color:#fff!important;
+      box-shadow:0 0 0 2px #075e50!important;
+    }
+    .project-card:focus-within{outline:3px solid #075e50;outline-offset:3px;box-shadow:0 0 0 2px #fff,0 0 0 5px #075e50}
   </style>
   <script type="application/ld+json">
   {
