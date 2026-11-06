@@ -119,6 +119,27 @@
     }
     .project-card:focus-within{outline:3px solid #075e50;outline-offset:3px;box-shadow:0 0 0 2px #fff,0 0 0 5px #075e50}
   
+  
+    /* Blended technical-console details and evidence-based skill summaries */
+    .profile-terminal{width:min(100%,450px);transform:rotate(0);background:linear-gradient(145deg,rgba(11,35,53,.98),rgba(17,49,67,.98));border-color:rgba(172,237,225,.28);box-shadow:0 28px 75px rgba(3,20,32,.32),0 0 60px rgba(14,165,137,.12)}
+    .profile-terminal .editor-top{color:#c1d8dd;border-color:rgba(255,255,255,.13)}
+    .terminal-status{display:inline-flex;align-items:center;gap:6px;color:#a6f0d4;font-size:8px;letter-spacing:.08em}
+    .terminal-status i{width:6px;height:6px;border-radius:50%;background:#4de0ab;box-shadow:0 0 9px rgba(77,224,171,.7)}
+    .profile-body{padding:20px clamp(16px,3vw,23px)}
+    .profile-command{padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.12);color:#e8f5f4}
+    .profile-readout{display:grid;gap:12px;padding:17px 0 5px}
+    .profile-row{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;align-items:start;line-height:1.6}
+    .profile-key{color:#8eb6c0;font:9px/1.6 var(--mono);letter-spacing:.07em}
+    .profile-value{color:#f0f7f4;font-size:11px;line-height:1.6}
+    .profile-terminal .editor-foot{color:#c0d8d9}
+    .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    .skills-grid .skill-card{min-height:0;padding:23px 24px;border-color:rgba(22,76,99,.65);background:linear-gradient(145deg,#102f45,#153b52);box-shadow:0 14px 34px rgba(13,43,63,.12);color:#eef7f8}
+    .skills-grid .skill-card:hover{border-color:rgba(38,196,155,.65);background:linear-gradient(145deg,#123950,#16495a);box-shadow:0 18px 40px rgba(13,43,63,.18)}
+    .skills-grid .skill-head h3{color:#f3f8f7}
+    .skills-grid .skill-icon{border-color:rgba(99,224,190,.34);background:rgba(21,150,127,.17);color:#8ce8cb}
+    .skill-summary{min-height:42px;margin:0 0 15px;color:#c3d7dc;font-size:12px;line-height:1.75}
+    .skills-grid .tag{border-color:rgba(220,244,245,.18);background:rgba(241,251,251,.08);color:#e1eeee}
+    @media(max-width:700px){.profile-row{grid-template-columns:84px minmax(0,1fr);gap:8px}.profile-value{font-size:10px}.skills-grid{grid-template-columns:1fr}.skill-summary{min-height:0}}
   </style>
   <script type="application/ld+json">
   {
@@ -175,7 +196,7 @@
         <p class="eyebrow" style="margin:27px 0 0">PORTFOLIO / 2026</p>
         <h1 id="heroTitle">REUBEN<span>NJOROGE</span></h1>
         <p class="hero-title">Computer Science Student <span aria-hidden="true">|</span> IT Support <span aria-hidden="true">|</span> Web Developer <span aria-hidden="true">|</span> Remote Freelancer</p>
-        <p class="hero-intro">Motivated second-year Computer Science and Technology student at Maseno University, with practical experience in internet networking, IT support, website development and business operations. I’m seeking flexible part-time remote opportunities to apply my skills and contribute to professional teams.</p>
+        <p class="hero-intro">Second-year Computer Science and Technology student at Maseno University, building practical skills across software, web development, networking and IT support. I enjoy solving technical problems and creating useful digital experiences, and I’m seeking flexible part-time remote opportunities while continuing my studies.</p>
         <div class="actions">
           <a class="button button-primary" href="#projects">Explore My Projects <span aria-hidden="true">↘</span></a>
           <a class="button" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
@@ -188,15 +209,17 @@
       </div>
       <div class="hero-art" role="img" aria-label="Abstract developer workspace illustration with a code editor">
         <div class="halo" aria-hidden="true"></div>
-        <div class="editor">
-          <div class="editor-top"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>reuben / ideas.js</span><span>●</span></div>
-          <div class="editor-body" aria-hidden="true">
-            <div class="code-line"><span class="line-no">01</span><span class="code-muted">const</span> <span class="code-gold">curiosity</span> = <span class="code-green">"always on"</span>;</div>
-            <div class="code-line"><span class="line-no">02</span></div>
-            <div class="code-line"><span class="line-no">03</span><span class="code-muted">function</span> <span class="code-blue">buildSomethingUseful</span>() {</div>
-            <div class="code-line"><span class="line-no">04</span>&nbsp;&nbsp;<span class="code-muted">return</span> <span class="code-purple">solve</span>(<span class="code-green">realProblems</span>);</div>
-            <div class="code-line"><span class="line-no">05</span>}</div>
-            <div class="editor-foot"><span>JAVA · JAVASCRIPT · LEARNING</span><span>KE / 001</span></div>
+        <div class="editor profile-terminal">
+          <div class="editor-top"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>reuben / profile.sh</span><span class="terminal-status"><i aria-hidden="true"></i> PROFILE</span></div>
+          <div class="editor-body profile-body" aria-hidden="true">
+            <div class="profile-command"><span class="code-muted">$</span> <span class="code-gold">reuben --profile</span></div>
+            <div class="profile-readout">
+              <div class="profile-row"><span class="profile-key">STUDY</span><span class="profile-value">Maseno University · Year 2</span></div>
+              <div class="profile-row"><span class="profile-key">FOCUS</span><span class="profile-value">Software · Networks · IT support</span></div>
+              <div class="profile-row"><span class="profile-key">TOOLS</span><span class="profile-value">Java · Assembly · Web</span></div>
+              <div class="profile-row"><span class="profile-key">LOOKING FOR</span><span class="profile-value">Part-time remote opportunities</span></div>
+            </div>
+            <div class="editor-foot"><span>LEARNING · BUILDING · CONNECTING</span><span>KE / 001</span></div>
           </div>
         </div>
         <div class="float-chip one"><b>✳</b>&nbsp; curious by nature</div>
@@ -246,13 +269,13 @@
 
     <section class="section" id="skills" aria-labelledby="skillsTitle">
       <div class="wrap">
-        <div class="section-heading"><div><div class="section-index">04 / TECHNICAL SKILLS</div><h2 class="section-title" id="skillsTitle">Tools of the <em>trade.</em></h2></div><p class="section-lead">A growing toolkit shaped by study, personal projects and hands-on exploration. Listed without proficiency ratings.</p></div>
+        <div class="section-heading"><div><div class="section-index">04 / TECHNICAL SKILLS</div><h2 class="section-title" id="skillsTitle">Technical skill <em>matrix.</em></h2></div><p class="section-lead">A growing toolkit shaped by study, personal projects and hands-on exploration. Listed without proficiency ratings.</p></div>
         <div class="skills-grid">
-          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">{ }</span><h3>Programming</h3></div><div class="tags"><span class="tag">Java</span><span class="tag">Assembly Language</span></div></article>
-          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Web Development</h3></div><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Website deployment</span></div></article>
-          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">▤</span><h3>Office &amp; Data</h3></div><div class="tags"><span class="tag">Microsoft Word</span><span class="tag">Microsoft Excel</span><span class="tag">Data entry</span><span class="tag">Document management</span></div></article>
-          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">⌘</span><h3>Digital Tools</h3></div><div class="tags"><span class="tag">Graphic design</span><span class="tag">Internet research</span><span class="tag">Email communication</span></div></article>
-          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">⌁</span><h3>IT Support &amp; Networking</h3></div><div class="tags"><span class="tag">Computer troubleshooting</span><span class="tag">Wi-Fi configuration</span><span class="tag">MikroTik</span><span class="tag">Hotspot management</span></div></article>
+          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">{ }</span><h3>Software &amp; Programming</h3></div><p class="skill-summary">Java GUI practice with Swing, alongside Assembly Language programming.</p><div class="tags"><span class="tag">Java</span><span class="tag">Java Swing</span><span class="tag">Assembly Language</span></div></article>
+          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Web Development</h3></div><p class="skill-summary">Building personal and web-based projects, with experience exploring deployment.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Website deployment</span></div></article>
+          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">▤</span><h3>Digital Operations &amp; Data</h3></div><p class="skill-summary">Organizing information and supporting everyday digital and document workflows.</p><div class="tags"><span class="tag">Microsoft Word</span><span class="tag">Microsoft Excel</span><span class="tag">Data entry</span><span class="tag">Document management</span></div></article>
+          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">⌘</span><h3>Digital Tools &amp; Communication</h3></div><p class="skill-summary">Using research, design and online communication tools to support independent work.</p><div class="tags"><span class="tag">Graphic design</span><span class="tag">Internet research</span><span class="tag">Email communication</span></div></article>
+          <article class="panel skill-card"><div class="skill-head"><span class="skill-icon" aria-hidden="true">⌁</span><h3>Networking &amp; IT Support</h3></div><p class="skill-summary">Hands-on work with connectivity, troubleshooting, Wi-Fi and hotspot services.</p><div class="tags"><span class="tag">Computer troubleshooting</span><span class="tag">Wi-Fi configuration</span><span class="tag">MikroTik</span><span class="tag">Hotspot management</span></div></article>
         </div>
       </div>
     </section>
